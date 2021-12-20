@@ -1,7 +1,7 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 
-const AppFooter = () => {
+const Footer = () => {
   return (
     <footer>
       <div>
@@ -11,4 +11,4 @@ const AppFooter = () => {
   )
 }
 
-export default AppFooter
+export default Footer

@@ -4,7 +4,8 @@ module.exports = {
     title: "gatsby-storybook",
   },
   plugins: [
-    "gatsby-plugin-styled-components",
+    "gatsby-plugin-styled-components", // not using due to npm run storybook issues
+    "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",

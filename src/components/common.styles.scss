@@ -1,0 +1,54 @@
+// import styled, { css } from 'styled-components'
+
+// export const SectionBucket = styled.div`
+//   padding: 50px 0;
+
+//   ${props => props.large && css`
+//     padding-top: 150px;
+//   `}
+// `
+
+// export const Ptag = styled.p`
+//   margin: 0;
+
+//   ${props => props.p1 && css`
+//     padding: 1rem;
+//   `}
+// `
+
+@font-face {
+  font-family: "Muli Regular";
+  src: url("../fonts/muli-regular.woff2");
+}
+
+@font-face {
+  font-family: "Muli Extra Bold";
+  src: url("../fonts/muli-extrabold.woff2");
+}
+
+* {
+  box-sizing: border-box;
+
+  &::after,
+  &::before {
+    box-sizing: inherit;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: "Muli Regular", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-bucket {
+  padding: 50px 0;
+}

@@ -1,0 +1,76 @@
+// import styled, { css } from 'styled-components'
+
+// export const AppContainer = styled.div`
+//   max-width: 100%;
+//   margin: auto;
+
+//   ${props => props.large && css`
+//     max-width: 1220px;
+//   `}
+  
+//   ${props => props.medium && css`
+//     max-width: 1110px;
+//   `}
+
+//   ${props => props.small && css`
+//     max-width: 980px;
+//   `}
+// `
+
+// export const AppFlex = styled.div`
+//   display: flex;
+
+//   ${props => props.spacebetween && css`
+//     justify-content: space-between;
+//   `}
+
+//   ${props => props.aligncenter && css`
+//     align-items: center;
+//   `}
+
+//   ${props => props.textcenter && css`
+//     justify-content: center;
+//   `}
+// `
+
+// export const AppFlexItems = styled.div`
+//   flex: 1 1 50%;
+  
+//   ${props => props.basis6 && css`
+//     flex-basis: 60%;
+//   `}
+// `
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  &.container--large {
+    max-width: 1220px;
+  }
+
+  &.container--medium {
+    max-width: 1110px;
+  }
+
+  &.container--small {
+    max-width: 999px;
+  }
+}
+
+.flex {
+  display: flex;
+
+  &.flex--spacebetween {
+    justify-content: space-between;
+  }
+
+  &.flex--spacearound {
+    justify-content: space-around;
+  }
+
+  &.flex--items-center {
+    align-items: center;
+  }
+}

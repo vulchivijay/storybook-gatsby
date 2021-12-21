@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby';
-// import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 
 import "./index.scss"
 
@@ -10,7 +10,7 @@ const Header = ({ appLogo, appTitle, appNavBar }) => (
     <div className="container container--large">
       <div className="flex flex--spacebetween flex--items-center">
         <Link to="/" className="logo flex flex--items-center">
-          {/* <StaticImage src="./../../images/icon.png" alt={appLogo.altText} /> */}
+          {appLogo.url && (<StaticImage src="./../../images/icon.png" alt={appLogo.altText} />) }
           <span>{appTitle}</span>
         </Link>
         <nav>

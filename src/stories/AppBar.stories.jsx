@@ -11,7 +11,7 @@ const Template = (args) => <Header {...args} />;
 export const Primary = Template.bind({});
 Primary.args = {
   appLogo: {
-    url: './../images/icon.png',
+    url: '',
     altText: 'App Logo'
   },
   appTitle: "Gatsby",

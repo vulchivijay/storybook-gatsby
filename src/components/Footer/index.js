@@ -4,7 +4,7 @@ import * as React from 'react'
 const Footer = () => {
   return (
     <footer>
-      <div>
+      <div className="container container--large">
         <p>&copy; 2021.</p>
       </div>
     </footer>

@@ -1,5 +1,6 @@
 import { action } from "@storybook/addon-actions"
 import "./../src/components/styles.scss"
+import "./../src/components/shared/button.scss"
 import "./../src/components/Header/index.scss"
 import "./../src/components/Footer/index.scss"
 

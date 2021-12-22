@@ -1,8 +1,19 @@
 import * as React from "react"
 import Prototypes from "prop-types"
 import { Link } from "gatsby"
+import Button from "../shared/Button"
 
 import "./index.scss"
+
+const buttonWithIcon = {
+  label: "Login",
+  noBorder: true
+}
+
+const buttonData = {
+  primary: true,
+  label: "Sign up for Free"
+}
 
 const Header = ({ data }) => (
   <header>
@@ -23,15 +34,13 @@ const Header = ({ data }) => (
                           data.appNavBar[key].submenu && (
                             <ul className="submenu" key={index}>
                               {
-                                Object.keys(data.appNavBar[key].submenu).map((newKey, index) => {
-                                  return (
+                                Object.keys(data.appNavBar[key].submenu).map((newKey, index) => (
                                     <li key={index}>
                                       <Link to={data.appNavBar[key].submenu[newKey].url}>
                                         {data.appNavBar[key].submenu[newKey].label}
                                       </Link>
                                     </li>
-                                  )
-                                })
+                                ))
                               }
                             </ul>   
                           )
@@ -44,7 +53,8 @@ const Header = ({ data }) => (
           </nav>
         </div>
         <div>
-          <button>Sign up for free</button>
+          <Button {...buttonWithIcon} />
+          <Button {...buttonData} />
         </div>
       </div>
     </div>

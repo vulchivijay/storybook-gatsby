@@ -1,0 +1,39 @@
+.btn {
+  display: inline-block;
+  margin-left: 1rem;
+  line-height: 1;
+  font-family: "Muli-Regular", sans-serif;
+  border: 0;
+  cursor: pointer;
+
+  &.btn--primary {
+    color: #FFF;
+    background: #03a973 !important;
+    border: 1px solid #03a973 !important;
+  }
+
+  &.btn--secondary {
+    color: #333;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+  }
+
+  &.btn--noborder {
+    border-color: transparent;
+  }
+
+  &.btn--small {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+
+  &.btn--medium {
+    font-size: 14px;
+    padding: 11px 20px;
+  }
+
+  &.btn--large {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}

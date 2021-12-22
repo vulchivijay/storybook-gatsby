@@ -1,4 +1,7 @@
 header {
+  position: sticky;
+  top: 0;
+  z-index: 99999;
   padding: 1rem 0;
   border-bottom: 1px solid rgba(0,0,0,0.14);
 
@@ -23,18 +26,27 @@ header {
     cursor: pointer;
   }
 
-  > ul > li:hover ul {
+  > ul > li:hover ul.submenu {
     display: flex;
+    flex-wrap: wrap;
   }
 
   ul.submenu {
+    display: none;
     position: absolute;
     top: 25px;
     left: 0;
+    z-index: 10;
     min-width: 400px;
     padding: 1rem;
     background-color: #fff;
-    display: none;
-    box-shadow: 0 0 4px rgba(0,0,0,0.14);
+    box-shadow: 0 0 10px 0 rgb(134 133 133 / 20%);
+    border: solid 1px rgba(53,58,64,0.1);
+    border-radius: 5px;
+  }
+
+  ul.submenu li {
+    display: flex;
+    flex: 0 0 50%;
   }
 }

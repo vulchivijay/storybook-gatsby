@@ -1,3 +1,13 @@
+
+## HTML page
+
+![Image 0](https://github.com/vulchivijay/storybook-gatsby/blob/main/src/images/html-page.png)
+
+## Storybook dashboard
+
+![Image 0](https://github.com/vulchivijay/storybook-gatsby/blob/main/src/images/storybook-dashboard.png)
+
+
 <p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />

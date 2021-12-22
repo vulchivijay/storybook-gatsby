@@ -1,40 +1,26 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'gatsby';
-import { StaticImage } from "gatsby-plugin-image"
+import * as React from "react"
+import Prototypes from "prop-types"
+import { Link } from "gatsby"
 
 import "./index.scss"
 
-const Header = ({ appLogo, appTitle, appNavBar }) => (
-  <header>
+const Header = ({ data }) => {
+  // console.log("Header: ", data);
+  return (<header>
     <div className="container container--large">
-      <div className="flex flex--spacebetween flex--items-center">
-        <Link to="/" className="logo flex flex--items-center">
-          {appLogo.url && (<StaticImage src="./../../images/icon.png" alt={appLogo.altText} />) }
-          <span>{appTitle}</span>
-        </Link>
-        <nav>
-          {
-            Object.keys(appNavBar).map(key => (
-              <Link to={appNavBar[key].url} key={key}>{appNavBar[key].label}</Link>
-            ))
-          }
-        </nav>
+      <div className="flex">
+        logo
       </div>
     </div>
-  </header>
-);
+  </header>)
+}
 
 Header.propTypes = {
-  appLogo: PropTypes.shape({}),
-  appTitle: PropTypes.string,
-  appNavBar: PropTypes.shape({}),
+  data: Prototypes.shape({}),
 };
 
 Header.defaultProps = {
-  appLogo: null,
-  appTitle: null,
-  appNavBar: null,
+  data: null
 };
 
 export default Header

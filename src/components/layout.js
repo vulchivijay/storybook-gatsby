@@ -4,24 +4,24 @@
 */
 import * as React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+// import { useStaticQuery, graphql } from "gatsby"
 
-import "./../components/common.styles.scss"
-import "./../components/layout.styles.scss"
+import Header from "../components/Header"
+import Footer from "./Footer"
+
+import "./../components/styles.scss"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-  const headerDate = {
+  // const data = useStaticQuery(graphql`
+  //   query SiteTitleQuery {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `)
+  const headerData = {
     appLogo: {
       url: './../images/icon.png',
       altText: 'App Logo'
@@ -41,14 +41,101 @@ const Layout = ({ children }) => {
         label: 'Blog'
       }
     },
-  }
+  };
+
+  const FooterData = {
+    column1: {
+      title: "Features",
+      links: {
+        home: {
+          url: "/",
+          label: "Home"
+        },
+        About: {
+          url: "/about",
+          label: "About"
+        },
+        Blog: {
+          url: "/blog",
+          label: "Blog"
+        },
+        Contact: {
+          url: "/contact",
+          label: "Contact"
+        },
+      },
+    },
+    column2: {
+      title: "Guides",
+      links: {
+        home: {
+          url: "/",
+          label: "Home"
+        },
+        About: {
+          url: "/about",
+          label: "About"
+        },
+        Blog: {
+          url: "/blog",
+          label: "Blog"
+        },
+        Contact: {
+          url: "/contact",
+          label: "Contact"
+        },
+      }
+    },
+    column3: {
+      title: "Comparison",
+      links: {
+        home: {
+          url: "/",
+          label: "Home"
+        },
+        About: {
+          url: "/about",
+          label: "About"
+        },
+        Blog: {
+          url: "/blog",
+          label: "Blog"
+        },
+        Contact: {
+          url: "/contact",
+          label: "Contact"
+        },
+      }
+    },
+    column4: {
+      title: "Quick Links",
+      links: {
+        home: {
+          url: "/",
+          label: "Home"
+        },
+        About: {
+          url: "/about",
+          label: "About"
+        },
+        Blog: {
+          url: "/blog",
+          label: "Blog"
+        },
+        Contact: {
+          url: "/contact",
+          label: "Contact"
+        },
+      }
+    },
+  };
 
   return (
     <>
       {/* <SuperNav /> */}
-      <Header {...headerDate} />
+      <Header data={headerData} />
       <main>{children}</main>
-      <Footer />
+      <Footer data={FooterData} />
     </>
   )
 }

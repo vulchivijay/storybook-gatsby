@@ -1,7 +1,5 @@
 import { action } from "@storybook/addon-actions"
-
-import "./../src/components/common.styles.scss"
-import "./../src/components/layout.styles.scss"
+import "./../src/components/styles.scss"
 
 // Gatsby's Link overrides:
 // Gatsby Link calls the `enqueue` & `hovering` methods on the global variable ___loader.
@@ -18,13 +16,3 @@ global.__BASE_PATH__ = "/"
 window.___navigate = pathname => {
   action("NavigateTo:")(pathname)
 }
-
-// export const parameters = {
-//   actions: { argTypesRegex: "^on[A-Z].*" },
-//   controls: {
-//     matchers: {
-//       color: /(background|color)$/i,
-//       date: /Date$/,
-//     },
-//   },
-// }

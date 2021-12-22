@@ -1,11 +1,10 @@
 import * as React from "react"
-import Layout from '../components/layout'
-import Seo from '../components/seo'
+import Layout from "./../components/Layout"
 
+// markup
 const IndexPage = () => {
   return (
     <Layout>
-      <Seo title="Home page" />
       <div className="container container--large">
         <h1>Index page</h1>
       </div>

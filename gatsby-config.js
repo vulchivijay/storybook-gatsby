@@ -1,10 +1,9 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "gatsby-storybook",
+    title: "storybook-gatsby",
   },
   plugins: [
-    "gatsby-plugin-styled-components", // not using due to npm run storybook issues
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
@@ -15,8 +14,8 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
-    "gatsby-transformer-remark",
     "gatsby-plugin-mdx",
+    "gatsby-transformer-remark",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {

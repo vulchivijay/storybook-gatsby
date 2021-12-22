@@ -9,8 +9,8 @@ export default {
 
 const Template = (args) => <Footer {...args} />;
 
-export const FourColumns = Template.bind({});
-FourColumns.args = {
+export const Columns = Template.bind({});
+Columns.args = {
   data: {
     column1: {
       title: "Features",
@@ -26,6 +26,10 @@ FourColumns.args = {
         Blog: {
           url: "/blog",
           label: "Blog"
+        },
+        Contact: {
+          url: "/contact",
+          label: "Contact"
         },
       },
     },
@@ -44,6 +48,10 @@ FourColumns.args = {
           url: "/blog",
           label: "Blog"
         },
+        Contact: {
+          url: "/contact",
+          label: "Contact"
+        },
       }
     },
     column3: {
@@ -60,6 +68,10 @@ FourColumns.args = {
         Blog: {
           url: "/blog",
           label: "Blog"
+        },
+        Contact: {
+          url: "/contact",
+          label: "Contact"
         },
       }
     },

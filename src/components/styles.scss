@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Muli-Bold";
+  src: url("./../fonts/muli-bold.woff2");
+}
+
+@font-face {
+  font-family: "Muli-Regular";
+  src: url("./../fonts/muli-regular.woff2");
+}
+
 * {
   box-sizing: border-box;
 
@@ -14,6 +24,7 @@ html {
 body {
   margin: 0;
   font-size: 1.5rem;
+  font-family: "Muli-Regular", sans-serif;
 }
 
 a {
@@ -50,11 +61,11 @@ ul {
     justify-content: center;
   }
 
-  &.flex-jcsb {
+  &.flex--jcsb {
     justify-content: space-between;
   }
 
-  &.flex-aic {
+  &.flex--aic {
     align-items: center;
   }
 }

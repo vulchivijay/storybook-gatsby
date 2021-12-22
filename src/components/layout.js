@@ -28,18 +28,46 @@ const Layout = ({ children }) => {
     },
     appTitle: "Gatsby",
     appNavBar: {
-      home: {
-        url: '/',
-        label: 'Home'
+      "Menu 1": {
+        url: "",
+        label: "Menu 1",
+        "submenu": {
+          "Sub Menu 1": {
+            url: '/menu-1',
+            label: "Sub menu 1"
+          },
+          "Sub Menu 2": {
+            url: '/menu-2',
+            label: "Sub menu 2"
+          },
+          "Sub Menu 3": {
+            url: '/menu-3',
+            label: "Sub menu 3"
+          },
+        }
       },
-      about: {
-        url: '/about',
-        label: 'About'
+      "Menu 2": {
+        url: "",
+        label: "Menu 2",
+        "submenu": {
+          "Sub Menu 1": {
+            url: '/menu-1',
+            label: "Sub menu 1"
+          },
+          "Sub Menu 2": {
+            url: '/menu-2',
+            label: "Sub menu 2"
+          },
+          "Sub Menu 3": {
+            url: '/menu-3',
+            label: "Sub menu 3"
+          },
+        }
       },
-      blog: {
-        url: '/blog',
-        label: 'Blog'
-      }
+      "Menu 3": {
+        url: "/",
+        label: "Menu 3",
+      },
     },
   };
 

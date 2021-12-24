@@ -1,3 +1,7 @@
 footer {
   border-top: 1px solid rgba(0,0,0,0.14);
+  
+  .flex-equal-columns.fb--10 {
+    flex-basis: 10%;
+  }
 }

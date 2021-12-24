@@ -28,134 +28,261 @@ const Layout = ({ children }) => {
     },
     appTitle: "Gatsby",
     appNavBar: {
-      "Menu 1": {
+      "link1": {
         url: "",
-        label: "Menu 1",
+        label: "Use cases",
         "submenu": {
-          "Sub Menu 1": {
-            url: '/menu-1',
-            label: "Sub menu 1"
+          "link1": {
+            url: '/',
+            label: "Web Application Testing",
+            subText: "Testing web application end to end"
           },
-          "Sub Menu 2": {
-            url: '/menu-2',
-            label: "Sub menu 2"
+          "link2": {
+            url: '/',
+            label: "Web Application Testing",
+            subText: "Testing web application end to end"
           },
-          "Sub Menu 3": {
-            url: '/menu-3',
-            label: "Sub menu 3"
+          "link3": {
+            url: '/',
+            label: "Web Application Testing",
+            subText: "Testing web application end to end"
+          },
+          "link4": {
+            url: '/',
+            label: "Web Application Testing",
+            subText: "Testing web application end to end"
           },
         }
       },
-      "Menu 2": {
+      "link2": {
         url: "",
-        label: "Menu 2",
+        label: "Features",
         "submenu": {
-          "Sub Menu 1": {
-            url: '/menu-1',
-            label: "Sub menu 1"
+          "link1": {
+            url: '/',
+            label: "Web Application Testing",
+            subText: "Testing web application end to end"
           },
-          "Sub Menu 2": {
-            url: '/menu-2',
-            label: "Sub menu 2"
+          "link2": {
+            url: '/',
+            label: "Web Application Testing",
+            subText: "Testing web application end to end"
           },
-          "Sub Menu 3": {
-            url: '/menu-3',
-            label: "Sub menu 3"
+          "link3": {
+            url: '/',
+            label: "Web Application Testing",
+            subText: "Testing web application end to end"
+          },
+          "link4": {
+            url: '/',
+            label: "Web Application Testing",
+            subText: "Testing web application end to end"
           },
         }
       },
-      "Menu 3": {
+      "link3": {
         url: "/",
-        label: "Menu 3",
+        label: "pricing",
+      },
+      "link4": {
+        url: "",
+        label: "Resources",
+        "submenu": {
+          "link1": {
+            url: '/',
+            label: "Web Application Testing",
+            subText: "Testing web application end to end"
+          },
+          "link2": {
+            url: '/',
+            label: "Web Application Testing",
+            subText: "Testing web application end to end"
+          },
+          "link3": {
+            url: '/',
+            label: "Web Application Testing",
+            subText: "Testing web application end to end"
+          },
+          "link4": {
+            url: '/',
+            label: "Web Application Testing",
+            subText: "Testing web application end to end"
+          },
+        }
       },
     },
   };
 
   const FooterData = {
-    column1: {
-      title: "Features",
-      links: {
-        home: {
+    about: {
+      logo: "",
+      logoAlt: "Company Logo",
+      support: "Sales & Support",
+      mobile: "+1 (442) 227-3201",
+      email: "support@testsigma.com",
+      contactus: {
+        url: "/",
+        label: "Contact us"
+      },
+      socialIcons: {
+        facebook: {
           url: "/",
-          label: "Home"
+          icon: "fa facebook"
         },
-        About: {
-          url: "/about",
-          label: "About"
+        twitter: {
+          url: "/",
+          icon: "fa twitter"
         },
-        Blog: {
-          url: "/blog",
-          label: "Blog"
+        linkedin: {
+          url: "/",
+          icon: "fa linkedin"
         },
-        Contact: {
-          url: "/contact",
-          label: "Contact"
+        youtube: {
+          url: "/",
+          icon: "fa youtube"
+        }
+      },
+      trusted: {
+        comapany1: {
+          url: "/",
+          logo: "/"
+        },
+        comapany2: {
+          url: "/",
+          logo: "/"
+        },
+        comapany3: {
+          url: "/",
+          logo: "/"
+        },
+        comapany4: {
+          url: "/",
+          logo: "/"
+        },
+      }
+    },
+    footerNav: {
+      column1: {
+        title: "Features",
+        links: {
+          link1: {
+            url: "/",
+            label: "Test Plan"
+          },
+          link2: {
+            url: "/",
+            label: "Test Management"
+          },
+          link3: {
+            url: "/",
+            label: "Test Data Management"
+          },
+          link4: {
+            url: "/",
+            label: "Cross Browser Testing"
+          },
         },
       },
-    },
-    column2: {
-      title: "Guides",
-      links: {
-        home: {
-          url: "/",
-          label: "Home"
+      column2: {
+        title: "Guides",
+        links: {
+          link1: {
+            url: "/",
+            label: "Regression Testing"
+          },
+          link2: {
+            url: "/",
+            label: "Codeless Testing"
+          },
+          link3: {
+            url: "/",
+            label: "DevTestOps"
+          },
+          link4: {
+            url: "/",
+            label: "Data Driven Testing"
+          },
+          link5: {
+            url: "/",
+            label: "Automated Testing"
+          },
+          link6: {
+            url: "/",
+            label: "Mobile Testing"
+          },
+          link7: {
+            url: "/",
+            label: "Continuous Integration"
+          },
+          link8: {
+            url: "/",
+            label: "Cross Browser Testing"
+          },
+        }
+      },
+      column3: {
+        title: "Comparison",
+        links: {
+          link1: {
+            url: "/",
+            label: "Why Testsigma?"
+          },
+          link2: {
+            url: "/",
+            label: "Selenium vs Testsigma"
+          },
+          link3: {
+            url: "/",
+            label: "Cucumber vs Testsigma"
+          },
+          link4: {
+            url: "/",
+            label: "Testsigma vs Other Tools"
+          },
         },
-        About: {
-          url: "/about",
-          label: "About"
+      },
+      column4: {
+        title: "Quick Links",
+        links: {
+          link1: {
+            url: "/",
+            label: "Pricing"
+          },
+          link2: {
+            url: "/",
+            label: "Support"
+          },
+          link3: {
+            url: "/",
+            label: "Careers"
+          },
+          link4: {
+            url: "/",
+            label: "Documentation"
+          },
+          link5: {
+            url: "/",
+            label: "Status"
+          },
+          link6: {
+            url: "/",
+            label: "Release Notes"
+          },
+          link7: {
+            url: "/",
+            label: "Knowledge Base"
+          },
+          link8: {
+            url: "/",
+            label: "Test Automation Engineers"
+          },
+          link9: {
+            url: "/",
+            label: "Affiliate Program"
+          },
         },
-        Blog: {
-          url: "/blog",
-          label: "Blog"
-        },
-        Contact: {
-          url: "/contact",
-          label: "Contact"
-        },
-      }
-    },
-    column3: {
-      title: "Comparison",
-      links: {
-        home: {
-          url: "/",
-          label: "Home"
-        },
-        About: {
-          url: "/about",
-          label: "About"
-        },
-        Blog: {
-          url: "/blog",
-          label: "Blog"
-        },
-        Contact: {
-          url: "/contact",
-          label: "Contact"
-        },
-      }
-    },
-    column4: {
-      title: "Quick Links",
-      links: {
-        home: {
-          url: "/",
-          label: "Home"
-        },
-        About: {
-          url: "/about",
-          label: "About"
-        },
-        Blog: {
-          url: "/blog",
-          label: "Blog"
-        },
-        Contact: {
-          url: "/contact",
-          label: "Contact"
-        },
-      }
-    },
+      },
+    }
   };
 
   return (
@@ -163,7 +290,7 @@ const Layout = ({ children }) => {
       {/* <SuperNav /> */}
       <Header data={headerData} />
       <main>{children}</main>
-      <Footer data={FooterData} />
+      <Footer footerData={FooterData} />
     </>
   )
 }

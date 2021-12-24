@@ -54,18 +54,67 @@ ul {
   }
 }
 
+.l-section {
+  padding: 50px 0;
+
+  .w-30,
+  .w-40,
+  .w-50,
+  .w-60,
+  .w-70,
+  .w-80,
+  .w-90 {
+    margin: auto;
+  }
+
+  .w-30 {
+    width: 30%;
+  }
+  .w-40 {
+    width: 40%;
+  }
+  .w-50 {
+    width: 50%;
+  }
+  .w-60 {
+    width: 60%;
+  }
+  .w-70 {
+    width: 70%;
+  }
+  .w-80 {
+    width: 80%;
+  }
+  .w-90 {
+    width: 90%;
+  }
+}
+
 .flex {
   display: flex;
 
-  &.flex--jcc {
+  &.flex--jcc,
+  .flex-jcc {
     justify-content: center;
   }
 
-  &.flex--jcsb {
+  &.flex--jcl,
+  .flex-jcl {
+    justify-content: left;
+  }
+
+  &.flex--jcr,
+  .flex-jcr {
+    justify-content: right;
+  }
+
+  &.flex--jcsb,
+  .flex--jcsb {
     justify-content: space-between;
   }
 
-  &.flex--aic {
+  &.flex--aic,
+  .flex--aic {
     align-items: center;
   }
 }

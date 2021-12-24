@@ -3,6 +3,8 @@ import "./../src/components/styles.scss"
 import "./../src/components/shared/button.scss"
 import "./../src/components/Header/index.scss"
 import "./../src/components/Footer/index.scss"
+import "./../src/components/shared/fullWidthImage.scss"
+import "./../src/components/shared/customers.scss"
 
 // Gatsby's Link overrides:
 // Gatsby Link calls the `enqueue` & `hovering` methods on the global variable ___loader.

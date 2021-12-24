@@ -18,9 +18,9 @@ const buttonData = {
 const Header = ({ data }) => (
   <header>
     <div className="container container--large">
-      <div className="flex flex--jcsb flex--aic">
-        <div>
-          <Link to="/" className="logo">{data.appTitle}</Link>
+      <div className="flex flex--aic">
+        <Link to="/" className="logo">{data.appTitle}</Link>
+        <div className="flex flex--jcsb flex--aic fb--full">
           <nav className="primary-nav">
             <ul>
               {
@@ -51,10 +51,10 @@ const Header = ({ data }) => (
               }
             </ul>
           </nav>
-        </div>
-        <div>
-          <Button {...buttonWithIcon} />
-          <Button {...buttonData} />
+          <div>
+            <Button {...buttonWithIcon} />
+            <Button {...buttonData} />
+          </div>
         </div>
       </div>
     </div>

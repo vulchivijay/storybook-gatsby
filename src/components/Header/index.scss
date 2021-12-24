@@ -4,11 +4,16 @@ header {
   z-index: 99999;
   padding: 1rem 0;
   border-bottom: 1px solid rgba(0,0,0,0.14);
+  background-color: #fff;
 
   .logo {
     font-size: 3rem;
     font-family: "Muli-Bold", sans-serif;
   }
+}
+
+.flex.fb--full {
+  flex-basis: calc(100% - 120px)
 }
 
 .primary-nav {
@@ -23,7 +28,6 @@ header {
     position: relative;
     margin-left: 1.5rem;
     padding: 0.5rem;
-    cursor: pointer;
   }
 
   > ul > li:hover ul.submenu {
@@ -48,5 +52,6 @@ header {
   ul.submenu li {
     display: flex;
     flex: 0 0 50%;
+    margin: 1rem 0;
   }
 }

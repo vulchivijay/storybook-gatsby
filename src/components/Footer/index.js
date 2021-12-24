@@ -4,26 +4,38 @@ import { Link } from "gatsby"
 
 import "./index.scss"
 
-const Footer = ({ data }) => (
+const Footer = ({ footerData }) => {
+  console.log(footerData);
+  return (
   <footer>
     <div className="container container--large">
       <div className="flex">
         {
-          data && Object.keys(data).map((key, index) => {
-            return (<div className="flex-equal-columns" key={index}>
-              { data[key].title && (<p><strong>{data[key].title}</strong></p>) }
-              {
-                data[key].links && (
-                  <ul>
-                    {
-                      Object.keys(data[key].links).map((newKey, index) => (
-                        <li key={index}><Link to={data[key].links[newKey].url}>{data[key].links[newKey].label}</Link></li>
-                      ))
-                    }
-                  </ul>
-                )
-              }
+          footerData.about && (<div className="flex-equal-columns fb--10">
+              <p>{ footerData.about.logoAlt }</p>
+              <p>{ footerData.about.support}</p>
+              <p>{ footerData.about.mobile}</p>
+              <p>{ footerData.about.email}</p>
             </div>)
+        }
+        {
+          footerData.footerNav && Object.keys(footerData.footerNav).map((key, index) => {
+            return (
+              <div className="flex-equal-columns" key={index}>
+                { footerData.footerNav[key].title && (<p><strong>{footerData.footerNav[key].title}</strong></p>) }
+                {
+                  footerData.footerNav[key].links && (
+                    <ul>
+                      {
+                        Object.keys(footerData.footerNav[key].links).map((newKey, index) => (
+                          <li key={index}><Link to={footerData.footerNav[key].links[newKey].url}>{footerData.footerNav[key].links[newKey].label}</Link></li>
+                        ))
+                      }
+                    </ul>
+                  )
+                }
+              </div>
+            )
           })
         }
       </div>
@@ -31,8 +43,8 @@ const Footer = ({ data }) => (
         <p>Copyright © Testsigma Technologies Inc. All Rights Reserved</p>
       </div>
     </div>
-  </footer>
-)
+  </footer>)
+}
 
 Footer.propTypes = {
   data: Prototypes.shape({}),

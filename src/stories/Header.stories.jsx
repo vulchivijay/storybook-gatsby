@@ -18,45 +18,87 @@ Primary.args = {
     },
     appTitle: "Gatsby",
     appNavBar: {
-      "Menu 1": {
+      "link1": {
         url: "",
-        label: "Menu 1",
+        label: "Use cases",
         "submenu": {
-          "Sub Menu 1": {
-            url: '/menu-1',
-            label: "Sub menu 1"
+          "link1": {
+            url: '/',
+            label: "Web Application Testing",
+            subText: "Testing web application end to end"
           },
-          "Sub Menu 2": {
-            url: '/menu-2',
-            label: "Sub menu 2"
+          "link2": {
+            url: '/',
+            label: "Web Application Testing",
+            subText: "Testing web application end to end"
           },
-          "Sub Menu 3": {
-            url: '/menu-3',
-            label: "Sub menu 3"
+          "link3": {
+            url: '/',
+            label: "Web Application Testing",
+            subText: "Testing web application end to end"
+          },
+          "link4": {
+            url: '/',
+            label: "Web Application Testing",
+            subText: "Testing web application end to end"
           },
         }
       },
-      "Menu 2": {
+      "link2": {
         url: "",
-        label: "Menu 2",
+        label: "Features",
         "submenu": {
-          "Sub Menu 1": {
-            url: '/menu-1',
-            label: "Sub menu 1"
+          "link1": {
+            url: '/',
+            label: "Web Application Testing",
+            subText: "Testing web application end to end"
           },
-          "Sub Menu 2": {
-            url: '/menu-2',
-            label: "Sub menu 2"
+          "link2": {
+            url: '/',
+            label: "Web Application Testing",
+            subText: "Testing web application end to end"
           },
-          "Sub Menu 3": {
-            url: '/menu-3',
-            label: "Sub menu 3"
+          "link3": {
+            url: '/',
+            label: "Web Application Testing",
+            subText: "Testing web application end to end"
+          },
+          "link4": {
+            url: '/',
+            label: "Web Application Testing",
+            subText: "Testing web application end to end"
           },
         }
       },
-      "Menu 3": {
+      "link3": {
         url: "/",
-        label: "Menu 3",
+        label: "Pricing",
+      },
+      "link4": {
+        url: "",
+        label: "Resources",
+        "submenu": {
+          "link1": {
+            url: '/',
+            label: "Web Application Testing",
+            subText: "Testing web application end to end"
+          },
+          "link2": {
+            url: '/',
+            label: "Web Application Testing",
+            subText: "Testing web application end to end"
+          },
+          "link3": {
+            url: '/',
+            label: "Web Application Testing",
+            subText: "Testing web application end to end"
+          },
+          "link4": {
+            url: '/',
+            label: "Web Application Testing",
+            subText: "Testing web application end to end"
+          },
+        }
       },
     },
   }

@@ -1,0 +1,40 @@
+.section-customers {
+  text-align: center;
+
+  h3,
+  h4 {
+    font-family: "Muli-Bold", sans-serif;
+  }
+
+  h3 {
+    line-height: 52px;
+    font-size: 3.8rem;
+  }
+
+  h4 {
+    line-height: 42px;
+    font-size: 2.8rem;
+  }
+
+  .customers-logo span {
+    display: inline-block;
+    margin: 0 1rem;
+  }
+}
+
+.test--executes {
+  width: 98%;
+  margin: 5rem 0;
+  padding: 3rem 0;
+  border-radius: 0 0 60px 0;
+  background-color: #f6f8f9;
+
+  p {
+    line-height: 26px;
+  }
+
+  p:first-child {
+    padding-right: 10rem;
+    border-right: 1px solid #000;
+  }
+}

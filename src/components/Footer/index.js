@@ -5,7 +5,6 @@ import { Link } from "gatsby"
 import "./index.scss"
 
 const Footer = ({ footerData }) => {
-  console.log(footerData);
   return (
   <footer>
     <div className="container container--large">

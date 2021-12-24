@@ -48,9 +48,3 @@ Secondary.args = {
     }
   }
 };
-
-export const TestExecute = Template.bind({});
-TestExecute.args = {
-  para: "Enables everyone including SMEs & QAs to write automated tests using simple English. No coding skills required.",
-  digits: "1300000+ No of Tests Executed"
-};

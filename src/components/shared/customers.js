@@ -19,16 +19,6 @@ const Customers = ({title, subheading, para, logos, digits}) => {
           </div>
         </div>)
       }
-      {
-        digits && para && (
-          <div className="flex flex--jcl test--executes">
-            <div className="flex w-70">
-              <p className="w-60">{para}</p>
-              <p className="w-40 column-digits">{digits}</p>
-            </div>
-          </div>
-        )
-      }
     </section>
   )
 }

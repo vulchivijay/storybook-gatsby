@@ -1,6 +1,7 @@
 import * as React from "react"
 import Layout from "./../components/Layout"
 import Customers from "../components/shared/customers"
+import FullWidthString from "../components/shared/FullWidthStripe"
 
 // markup
 const IndexPage = () => {
@@ -39,9 +40,25 @@ const IndexPage = () => {
         logoAlt: 'logo3'
       }
     },
+  } 
+
+  const fullWidthStringData = {
+    para: "Improve test coverage with proper data sets and well-managed data-driven testing approach.",
+    button: {
+      url: "/",
+      text: "Start your free trail now"
+    },
+    link: {
+      url: "/",
+      text: "Learn more"
+    },
+    extraPara: "Checkout a detailed mobile testing guide here"
+  }
+
+  const fullWidthStringDataTwoColumn = {
     para: "Enables everyone including SMEs & QAs to write automated tests using simple English. No coding skills required.",
     digits: "1300000+ No of Tests Executed"
-  } 
+  }
 
   return (
     <Layout>
@@ -51,6 +68,8 @@ const IndexPage = () => {
       <div>
         <Customers {...CustomersPrimary} />
         <Customers {...CustomersSecondaryWithTwoColumns} />
+        <FullWidthString {...fullWidthStringData} />
+        <FullWidthString {...fullWidthStringDataTwoColumn} />
       </div>
     </Layout>
   )

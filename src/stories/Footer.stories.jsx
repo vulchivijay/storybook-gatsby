@@ -20,7 +20,7 @@ Columns.args = {
       email: "support@testsigma.com",
       contactus: {
         url: "/",
-        label: "Contact us"
+        text: "Contact us"
       },
       socialIcons: {
         facebook: {
@@ -65,19 +65,19 @@ Columns.args = {
         links: {
           link1: {
             url: "/",
-            label: "Test Plan"
+            text: "Test Plan"
           },
           link2: {
             url: "/",
-            label: "Test Management"
+            text: "Test Management"
           },
           link3: {
             url: "/",
-            label: "Test Data Management"
+            text: "Test Data Management"
           },
           link4: {
             url: "/",
-            label: "Cross Browser Testing"
+            text: "Cross Browser Testing"
           },
         },
       },
@@ -86,35 +86,35 @@ Columns.args = {
         links: {
           link1: {
             url: "/",
-            label: "Regression Testing"
+            text: "Regression Testing"
           },
           link2: {
             url: "/",
-            label: "Codeless Testing"
+            text: "Codeless Testing"
           },
           link3: {
             url: "/",
-            label: "DevTestOps"
+            text: "DevTestOps"
           },
           link4: {
             url: "/",
-            label: "Data Driven Testing"
+            text: "Data Driven Testing"
           },
           link5: {
             url: "/",
-            label: "Automated Testing"
+            text: "Automated Testing"
           },
           link6: {
             url: "/",
-            label: "Mobile Testing"
+            text: "Mobile Testing"
           },
           link7: {
             url: "/",
-            label: "Continuous Integration"
+            text: "Continuous Integration"
           },
           link8: {
             url: "/",
-            label: "Cross Browser Testing"
+            text: "Cross Browser Testing"
           },
         }
       },
@@ -123,19 +123,19 @@ Columns.args = {
         links: {
           link1: {
             url: "/",
-            label: "Why Testsigma?"
+            text: "Why Testsigma?"
           },
           link2: {
             url: "/",
-            label: "Selenium vs Testsigma"
+            text: "Selenium vs Testsigma"
           },
           link3: {
             url: "/",
-            label: "Cucumber vs Testsigma"
+            text: "Cucumber vs Testsigma"
           },
           link4: {
             url: "/",
-            label: "Testsigma vs Other Tools"
+            text: "Testsigma vs Other Tools"
           },
         },
       },
@@ -144,39 +144,39 @@ Columns.args = {
         links: {
           link1: {
             url: "/",
-            label: "Pricing"
+            text: "Pricing"
           },
           link2: {
             url: "/",
-            label: "Support"
+            text: "Support"
           },
           link3: {
             url: "/",
-            label: "Careers"
+            text: "Careers"
           },
           link4: {
             url: "/",
-            label: "Documentation"
+            text: "Documentation"
           },
           link5: {
             url: "/",
-            label: "Status"
+            text: "Status"
           },
           link6: {
             url: "/",
-            label: "Release Notes"
+            text: "Release Notes"
           },
           link7: {
             url: "/",
-            label: "Knowledge Base"
+            text: "Knowledge Base"
           },
           link8: {
             url: "/",
-            label: "Test Automation Engineers"
+            text: "Test Automation Engineers"
           },
           link9: {
             url: "/",
-            label: "Affiliate Program"
+            text: "Affiliate Program"
           },
         },
       },

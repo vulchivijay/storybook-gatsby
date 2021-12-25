@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import './button.scss';
 
-const Button = ({ primary, backgroundColor, size, label, noBorder, ...props }) => {
+const Button = ({ primary, backgroundColor, size, text, noBorder, ...props }) => {
   const mode = primary ? 'btn--primary' : 'btn--secondary';
   const border = noBorder ? 'btn--noborder' : ''
   return (
@@ -13,7 +13,7 @@ const Button = ({ primary, backgroundColor, size, label, noBorder, ...props }) =
       style={backgroundColor && { backgroundColor }}
       {...props}
     >
-      {label}
+      {text}
     </button>
   );
 };
@@ -23,7 +23,7 @@ Button.propTypes = {
   backgroundColor: PropTypes.string,
   noBorder: PropTypes.bool,
   size: PropTypes.oneOf(['small', 'medium', 'large']),
-  label: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
   onClick: PropTypes.func,
 };
 

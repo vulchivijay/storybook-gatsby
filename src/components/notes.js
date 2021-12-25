@@ -5,15 +5,15 @@ const FooterData = {
     links: {
       home: {
         url: "/",
-        label: "Home"
+        text: "Home"
       },
       About: {
         url: "/about",
-        label: "About"
+        text: "About"
       },
       Blog: {
         url: "/blog",
-        label: "Blog"
+        text: "Blog"
       },
     },
   },
@@ -22,15 +22,15 @@ const FooterData = {
     links: {
       home: {
         url: "/",
-        label: "Home"
+        text: "Home"
       },
       About: {
         url: "/about",
-        label: "About"
+        text: "About"
       },
       Blog: {
         url: "/blog",
-        label: "Blog"
+        text: "Blog"
       },
     }
   },
@@ -39,15 +39,15 @@ const FooterData = {
     links: {
       home: {
         url: "/",
-        label: "Home"
+        text: "Home"
       },
       About: {
         url: "/about",
-        label: "About"
+        text: "About"
       },
       Blog: {
         url: "/blog",
-        label: "Blog"
+        text: "Blog"
       },
     }
   },
@@ -56,19 +56,19 @@ const FooterData = {
     links: {
       home: {
         url: "/",
-        label: "Home"
+        text: "Home"
       },
       About: {
         url: "/about",
-        label: "About"
+        text: "About"
       },
       Blog: {
         url: "/blog",
-        label: "Blog"
+        text: "Blog"
       },
       Contact: {
         url: "/contact",
-        label: "Contact"
+        text: "Contact"
       },
     }
   },
@@ -93,7 +93,7 @@ const FooterData = {
   //             return (<nav>
   //               {
   //                 Object.keys(column).map((key, index) => (
-  //                   <Link to={column[key].url} key={index}>{column[key].label}</Link>     
+  //                   <Link to={column[key].url} key={index}>{column[key].text}</Link>     
   //                 ))
   //               }
   //             </nav>)

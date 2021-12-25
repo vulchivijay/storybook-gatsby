@@ -6,13 +6,13 @@ import Button from "../shared/Button"
 import "./index.scss"
 
 const buttonWithIcon = {
-  label: "Login",
+  text: "Login",
   noBorder: true
 }
 
 const buttonData = {
   primary: true,
-  label: "Sign up for Free"
+  text: "Sign up for Free"
 }
 
 const Header = ({ data }) => (
@@ -28,8 +28,8 @@ const Header = ({ data }) => (
                   return (
                     <li key={index}>
                       {data.appNavBar[key].url.length !== 0 ?
-                        <Link to={data.appNavBar[key].url}>{data.appNavBar[key].label}</Link>
-                        : data.appNavBar[key].label }
+                        <Link to={data.appNavBar[key].url}>{data.appNavBar[key].text}</Link>
+                        : data.appNavBar[key].text }
                         {
                           data.appNavBar[key].submenu && (
                             <ul className="submenu" key={index}>
@@ -37,7 +37,7 @@ const Header = ({ data }) => (
                                 Object.keys(data.appNavBar[key].submenu).map((newKey, index) => (
                                     <li key={index}>
                                       <Link to={data.appNavBar[key].submenu[newKey].url}>
-                                        {data.appNavBar[key].submenu[newKey].label}
+                                        {data.appNavBar[key].submenu[newKey].text}
                                       </Link>
                                     </li>
                                 ))

@@ -20,82 +20,82 @@ Primary.args = {
     appNavBar: {
       "link1": {
         url: "",
-        label: "Use cases",
+        text: "Use cases",
         "submenu": {
           "link1": {
             url: '/',
-            label: "Web Application Testing",
+            text: "Web Application Testing",
             subText: "Testing web application end to end"
           },
           "link2": {
             url: '/',
-            label: "Web Application Testing",
+            text: "Web Application Testing",
             subText: "Testing web application end to end"
           },
           "link3": {
             url: '/',
-            label: "Web Application Testing",
+            text: "Web Application Testing",
             subText: "Testing web application end to end"
           },
           "link4": {
             url: '/',
-            label: "Web Application Testing",
+            text: "Web Application Testing",
             subText: "Testing web application end to end"
           },
         }
       },
       "link2": {
         url: "",
-        label: "Features",
+        text: "Features",
         "submenu": {
           "link1": {
             url: '/',
-            label: "Web Application Testing",
+            text: "Web Application Testing",
             subText: "Testing web application end to end"
           },
           "link2": {
             url: '/',
-            label: "Web Application Testing",
+            text: "Web Application Testing",
             subText: "Testing web application end to end"
           },
           "link3": {
             url: '/',
-            label: "Web Application Testing",
+            text: "Web Application Testing",
             subText: "Testing web application end to end"
           },
           "link4": {
             url: '/',
-            label: "Web Application Testing",
+            text: "Web Application Testing",
             subText: "Testing web application end to end"
           },
         }
       },
       "link3": {
         url: "/",
-        label: "Pricing",
+        text: "Pricing",
       },
       "link4": {
         url: "",
-        label: "Resources",
+        text: "Resources",
         "submenu": {
           "link1": {
             url: '/',
-            label: "Web Application Testing",
+            text: "Web Application Testing",
             subText: "Testing web application end to end"
           },
           "link2": {
             url: '/',
-            label: "Web Application Testing",
+            text: "Web Application Testing",
             subText: "Testing web application end to end"
           },
           "link3": {
             url: '/',
-            label: "Web Application Testing",
+            text: "Web Application Testing",
             subText: "Testing web application end to end"
           },
           "link4": {
             url: '/',
-            label: "Web Application Testing",
+            text: "Web Application Testing",
             subText: "Testing web application end to end"
           },
         }

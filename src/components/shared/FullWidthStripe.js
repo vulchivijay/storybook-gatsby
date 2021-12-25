@@ -7,7 +7,7 @@ import "./fullwidthstripe.scss"
 const FullWidthStripe = ({para, digits, link, button, extraPara}) => {
   const buttonData = {
     primary: true,
-    label: button ? button.text : ''
+    text: button ? button.text : ''
   }
 
   const bottomRightCurve = digits ? 'fullwidthstripe--brcurve' : ''

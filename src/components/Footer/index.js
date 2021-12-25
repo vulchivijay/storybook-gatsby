@@ -27,7 +27,7 @@ const Footer = ({ footerData }) => {
                     <ul>
                       {
                         Object.keys(footerData.footerNav[key].links).map((newKey, index) => (
-                          <li key={index}><Link to={footerData.footerNav[key].links[newKey].url}>{footerData.footerNav[key].links[newKey].label}</Link></li>
+                          <li key={index}><Link to={footerData.footerNav[key].links[newKey].url}>{footerData.footerNav[key].links[newKey].text}</Link></li>
                         ))
                       }
                     </ul>
@@ -70,7 +70,7 @@ export default Footer
             //               <ul key={index}>
             //                 {
             //                   Object.keys(Links).map((key, index) => (
-            //                     <li key={index}><Link to={Links[key].url}>{Links[key].label}</Link></li>
+            //                     <li key={index}><Link to={Links[key].url}>{Links[key].text}</Link></li>
             //                   ))
             //                 }
             //               </ul>

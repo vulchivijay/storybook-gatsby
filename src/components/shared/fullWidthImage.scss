@@ -1,12 +1,44 @@
-.fullwidthimage {
+.one-column {
   min-height: 400px;
+  max-width: 900px;
+  margin: auto;
+  padding: 5rem 0;
+  text-align: center;
 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
-  text-align: center;
+  &.fullwidthimage--left {
+    text-align: left;
+  }
+
+  h1 {
+    line-height: 1.2;
+  }
+
+  p {
+    line-height: 1.4;
+  }
 }
-.width-60 {
-  width: 60%;
+
+.two-columns {
+  min-height: 400px;
+  padding: 5rem 0;
+
+  .content {
+    flex-basis: 40%;
+  }
+
+  ul {
+    padding: 3rem 0;
+  }
+
+  li {
+    line-height: 1.2;
+  }
+
+  .feature-image {
+    flex-basis: 60%;
+  }
 }

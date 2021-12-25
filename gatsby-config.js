@@ -34,5 +34,13 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "assets",
+        path: "./src/stories/assets/",
+      },
+      __key: "assets",
+    },
   ],
 };

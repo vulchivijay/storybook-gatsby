@@ -1,4 +1,6 @@
 import * as React from "react"
+import { StaticImage } from "gatsby-plugin-image"
+
 import Button from "./Button"
 
 import "./fullWidthImage.scss"
@@ -15,7 +17,7 @@ const FullWidthImage = ({type, imageUrl, title, para, points, signin, schedulead
   return (
     <div className="container">
       {
-        type === "onecolumn" && (<div className={['flex flex--aic one-column', align].join(' ')} style={{ backgroundImage: imageUrl }}>
+        type === "onecolumn" && (<div className={['flex flex--aic one-column', align].join(' ')}>
           <div className="">
             { title && (<h1>{title}</h1>) }
             { para && (<p>{para}</p>) }
@@ -35,7 +37,7 @@ const FullWidthImage = ({type, imageUrl, title, para, points, signin, schedulead
                 { points && (
                   <ul>
                     { points.map((point, index) => {
-                      return (<li key={index}>{point}</li>)
+                      return (<li key={index}><i>icon</i> {point} </li>)
                     })
                     }
                   </ul>
@@ -46,7 +48,10 @@ const FullWidthImage = ({type, imageUrl, title, para, points, signin, schedulead
                 </div>
               </div>
               <div className="feature-image">
-                <img image={imageUrl} alt="banner" />
+                <StaticImage
+                  src={"./../../stories/assets/i21.png"}
+                  alt={title}
+                />
               </div>
             </div>
           </div>

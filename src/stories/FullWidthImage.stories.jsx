@@ -12,7 +12,7 @@ const Template = (args) => <FullWidthImage {...args} />;
 export const OneColumn = Template.bind({});
 OneColumn.args = {
   type: "onecolumn",
-  imageUrl: "./assets/i21.png",
+  imageUrl: "./assets/bg_home.webp",
   title: "Unified, cloud-based test automation platform, powered by AI",
   para: "Testsigma uses AI to create stable and reliable automated tests faster than ever and to speed-up the executions and maintenance of your automated tests. No coding skills required.",
   points: [
@@ -36,7 +36,7 @@ OneColumn.args = {
 export const TwoColumn = Template.bind({});
 TwoColumn.args = {
   type: "twocolumn",
-  imageUrl: "./assets/i21.png",
+  imageUrl: "./../../stories/assets/i21.png",
   title: "Unified, cloud-based test automation platform, powered by AI",
   para: "Testsigma uses AI to create stable and reliable automated tests faster than ever and to speed-up the executions and maintenance of your automated tests. No coding skills required.",
   points: [

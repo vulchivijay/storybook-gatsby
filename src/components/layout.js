@@ -119,7 +119,7 @@ const Layout = ({ children }) => {
       logoAlt: "Company Logo",
       support: "Sales & Support",
       mobile: "+1 (442) 227-3201",
-      email: "support@testsigma.com",
+      email: "support@test.com",
       contactus: {
         url: "/",
         text: "Contact us"
